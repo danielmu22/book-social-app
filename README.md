@@ -1,27 +1,11 @@
 # BooksSocialApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Aplicación para subir información sobre libros, valorarlos y añadir comentarios sobre  ellos. 
 
-## Development server
+Enlace para acceder:
+https://books-social-app.web.app
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<img src="https://user-images.githubusercontent.com/56256124/194850804-639e1e66-cb52-4d16-9c49-9ba1e1f5ba8b.png"/>
 
-## Code scaffolding
+<img src="https://user-images.githubusercontent.com/56256124/194851349-e589ed7e-ef1a-44a1-b2f2-b5f735ac8ee9.png"/>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
