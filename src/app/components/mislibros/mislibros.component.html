@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+<div class="cajaBotonNuevoLibro">
+  <button [routerLink]="['/anadirNuevoLibro']" class="botonAñadirNuevoLibro">
+    Añadir nuevo libro
+  </button>
+
+</div>
+
+
+<div class="librosRecientes">
+    <div class="card mb-3 m-4" *ngFor="let item of mislibros" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="{{item.urlFoto}}" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{item.nombreLibro}}</h5>
+            <div class="module line-clamp">
+              <p>{{item.descripcion}}</p>
+            </div>
+            <div class="botonesEditarBorrar">
+              <button class="btn btn-info" [routerLink]="['/editarLibro/', item.id]">Editar</button>
+            <button (click)="eliminarLibro(item.id)" class="btn btn-danger">Borrar</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

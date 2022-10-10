@@ -1,0 +1,41 @@
+<header>
+    <div class="nombrePagina">
+        <h1 [routerLink]="['/main']">Booksty</h1>
+        <a class="logo" [routerLink]="['/main']"><img src="../../../assets/images/icons/logo.svg" class="logo" /></a>
+    </div>
+
+    <nav>
+        <!--PONER LAS RUTAS-->
+        <ul class="nav__links">
+            <li><a [routerLink]="['/misLibros']">Mis libros</a></li>
+            <li><a>Seguidos</a></li>
+            <li><a>Mis listas de lectura</a></li>
+        </ul>
+    </nav>
+    <div class="usuarioLogout">
+        <img class="imagenUsuario"
+            [src]="fotoUsuario!= null ? fotoUsuario : '../../../assets/images/icons/no-photo-user.png'" />
+        <a class="cta" (click)="onClick()">Log out</a>
+    </div>
+    <p class="menu cta">Menu</p>
+</header>
+<div class="overlay">
+    <a class="close">&times;</a>
+    <div class="overlay__content">
+        <a>Mis libros</a>
+        <a>Seguidos</a>
+        <a>Mis listas de lectura</a>
+        <img class="imagenUsuarioMovil" src="../../../assets/images/icons/no-photo-user.png" />
+        <a class="cta" (click)="onClick()">Log out</a>
+    </div>
+</div>
+
+
+
+
+
+<!--<nav>
+    <figure><a><img src="../../../assets/images/icons/logo.svg" class="logo"/></a></figure>
+    <div></div>
+    <button class="boton-logout" (click)="onClick()"> Log out</button>
+</nav>-->
